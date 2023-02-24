@@ -73,8 +73,15 @@ footer {
 
   img {
     position: absolute;
-    bottom: 0;
-    left: 250px;
+    top: 30%;
+    left: 60%;
     width: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: default;
+
+    &:hover {
+      opacity: 0.4;
+    }
   }
 }
