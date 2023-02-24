@@ -9,6 +9,10 @@
   }
 }
 
+body {
+  margin: 0;
+}
+
 header {
   height: 75px;
   padding: 0 20px;
@@ -31,4 +35,11 @@ header {
     border-radius: 20px;
     animation: fadeIn 1s ease-in;
   }
+}
+
+footer {
+  height: 200px;
+  background-image: url("/public/images/surf-black-beach.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
