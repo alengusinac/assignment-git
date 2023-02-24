@@ -38,12 +38,35 @@ header {
 }
 
 footer {
+  position: relative;
   height: 200px;
+  margin-top: 20px;
   background-image: url("/public/images/surf-black-beach.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   p {
+    position: absolute;
     color: wheat;
+
+    &:nth-child(1) {
+      right: 30%;
+    }
+
+    &:nth-child(2) {
+      top: 10%;
+      right: 35%;
+    }
+
+    &:nth-child(3) {
+      top: 20%;
+      right: 40%;
+    }
+
+    &:nth-child(4) {
+      bottom: 0;
+      left: 10px;
+      font-size: 0.5rem;
+    }
   }
 }
