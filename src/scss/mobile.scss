@@ -9,6 +9,10 @@
   }
 }
 
+body {
+  margin: 0;
+}
+
 header {
   height: 75px;
   padding: 0 20px;
@@ -30,5 +34,54 @@ header {
     margin: 0 auto;
     border-radius: 20px;
     animation: fadeIn 1s ease-in;
+  }
+}
+
+footer {
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+  background-image: url("/public/images/surf-black-beach.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+
+  p {
+    position: absolute;
+    color: wheat;
+
+    &:nth-child(1) {
+      right: 30%;
+    }
+
+    &:nth-child(2) {
+      top: 10%;
+      right: 35%;
+    }
+
+    &:nth-child(3) {
+      top: 20%;
+      right: 40%;
+    }
+
+    &:nth-child(4) {
+      bottom: 0;
+      left: 10px;
+      font-size: 0.5rem;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    width: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: default;
+
+    &:hover {
+      opacity: 0.4;
+    }
   }
 }
